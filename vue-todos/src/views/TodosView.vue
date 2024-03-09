@@ -76,7 +76,7 @@ const deleteTodo = (todo) => {
     </ul>
     <p v-else class="todos-msg">
       <Icon icon="noto-v1:sad-but-relieved-face" />
-      <span>You have no todo's to complete! Add one!</span>
+      <span class="span-clr">You have no todo's to complete! Add one!</span>
     </p>
     <p v-if="todosCompleted && todoList.length > 0" class="todos-msg">
       <Icon icon="noto-v1:party-popper" />
@@ -113,6 +113,9 @@ main {
     justify-content: center;
     gap: 8px;
     margin-top: 24px;
+  }
+  .span-clr{
+    color: rgb(18, 15, 15)
   }
 }
 </style>

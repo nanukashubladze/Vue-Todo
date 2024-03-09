@@ -23,10 +23,10 @@ const createTodo = () => {
 </script>
 
 <template>
-  <div class="input-wrap" :class="{'input-err' : todoState.invalid }">
-    <input type="text" v-model="todoState.todo" />
-    <button @click="createTodo()">Create</button>
-  </div>
+  <form class="input-wrap" :class="{'input-err' : todoState.invalid }">
+      <input type="text" v-model="todoState.todo" />
+      <button @click="createTodo()">Create</button>
+   </form>
   <p v-show="todoState.invalid" class="err-msg">{{ todoState.errMsg }}</p>
 </template>
 

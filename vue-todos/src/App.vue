@@ -22,4 +22,9 @@ import HeaderTodo from "./components/HeaderTodo.vue";
   max-width: 1100px;
   margin: 0 auto;
 }
+body {
+  background-image: url(./assets/207046-nature-landscape-sea-waves-green.jpg);
+  
+  
+}
 </style>
