@@ -1,11 +1,10 @@
 <script setup>
 import { reactive, defineEmits } from "vue";
-
 const emit = defineEmits(["create-todo"]);
 
 const todoState = reactive ({
   todo: "",
-  invalid: null,
+  invalid: false,
   errMsg: "",
 });
 
@@ -49,7 +48,7 @@ const createTodo = () => {
   input {
     width: 100%;
     padding: 8px 6px;
-    border: none;
+    border: nongite;
 
     &:focus {
       outline: none;
